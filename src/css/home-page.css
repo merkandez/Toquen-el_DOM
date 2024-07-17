@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 375px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+    background-image: url('/public/assets/ilustraciones/Imagen\ header\ mobile.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 7%;
+}
+.section{
+    width: 80%;
+    height: 100vh;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+section h2{
+    width: 80%;
+    margin: 10%;
+    font-size: 25px;
+    color: #FAB64B;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section1{
+    width: 80%;
+    height: 100vh;
+    margin: 10%;
+    margin-bottom: 50%;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.section2{
+    width: 80%;
+    height: 100vh;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardGuitar img{
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardViolin img{
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardDrums img{
+    width: 90%;
+    height: 30vh;
+    margin-top: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardPiano img{
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descriptionGuitar{
+    background-color: #1E3574;
+    border-radius: 5%;
+    width: 80%;
+    height: 40vh;
+    margin-bottom: 10vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.descriptionViolin{
+    background-color: #1E3574;
+    border-radius: 5%;
+    width: 80%;
+    height: 40vh;
+    margin-bottom: 50vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.descriptionDrums{
+    background-color: #1E3574;
+    border-radius: 5%;
+    width: 80%;
+    height: 40vh;
+    margin-bottom: 10vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.descriptionPiano{
+    background-color: #1E3574;
+    border-radius: 5%;
+    width: 80%;
+    height: 40vh;
+    margin-bottom: 10vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.descriptionGuitar p{
+    color: white;
+}
+.descriptionViolin p{
+    color: white; 
+}
+.descriptionDrums p{
+    color: white;
+}
+.descriptionPiano p{
+    color: white;
+}
+.descriptionGuitar h3{
+    color: #FAB64B;
+    margin-top: 5%;
+}
+.descriptionViolin h3{
+    color: #FAB64B;
+    margin-top: 5%;
+}
+.descriptionDrums h3{
+    color: #FAB64B;
+    margin-top: 5%;
+}
+.descriptionPiano h3{
+    color: #FAB64B;
+    margin-top: 5%;
+}
+
+/* tarjeta relative */
+/* botón absolut */
