@@ -2,6 +2,44 @@
   padding: 0;
   margin: 0;
 }
-section {
-  background-color: blue;
+:root {
+  --background-color: rgba(44, 79, 187, 1);
+}
+body {
+  background-color: var(--background-color);
+  padding: 2em;
+}
+div.avatar {
+}
+section.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article.card_profes {
+  display: flex;
+  flex-direction: row-reverse;
+  row-gap: 1em;
+  background-color: rgba(30, 53, 116, 1);
+  border-radius: 15px;
+  width: 330px;
+  height: 216px;
+  margin: 2em;
+}
+h3 {
+  color: rgba(250, 182, 75, 1);
+}
+section.about_us {
+  background-color: white;
+  margin: 0;
+}
+div.card_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  word-wrap: break-word;
+}
+p.card_description {
+  color: white;
 }
