@@ -17,7 +17,8 @@ body {
 
 .wrapper{
     width: 1060px;
-    background-color: #1f1e1e;
+    background-image: url(/public/assets/ilustraciones/21348.jpg);
+    background-size: cover;
     border-radius: 20px;
     padding: 35px 40px;
 
