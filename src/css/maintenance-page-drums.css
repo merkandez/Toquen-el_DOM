@@ -1,4 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
+body {
+  background-image: url("/public/assets/ilustraciones/batería-en-construcción.png");
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 90%;
+}
+
