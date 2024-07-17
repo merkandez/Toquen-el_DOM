@@ -1,53 +1,132 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vh;
+    width: 100%;
     margin: 0;
     background-color: #2C4FBB;
 }
 
-.piano {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100vh;
-    justify-content: center;
+/*Piano headboard*/
+
+.wrapper{
+    width: 1060px;
+    background-color: #1f1e1e;
+    border-radius: 20px;
+    padding: 35px 40px;
+
 }
 
-.octave {
+.wrapper .piano{
+    color: #b2b2b2;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-between ;
 }
 
-.key {
-    width: 40px;
-    height: 200px;
-    margin: 1px;
+.piano h2{
+    font-size: 1.6rem;
+}
+
+.piano .column{
+    display: flex;
+    align-items: center;
+}
+
+.piano .column span{
+    font-weight: 500;
+    margin-right: 15px;
+    font-size: 1.19rem;
+}
+
+.volume-slider input{
+    accent-color: white;
+    outline: none;
+}
+
+.keys-checkbox input{
+    width: 60px;
+    height: 30px;
+    appearance: none;
+    background: #4b4b4b;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.keys-checkbox input::before{
+    content: "";
+    position: absolute;
+    background: #8c8c8c;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    left: 5px;
+    border-radius: inherit;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.keys-checkbox input:checked::before{
+    background: white;
+    left: 35px;
+}
+
+/* Piano keys */ 
+.piano-keys .key{
+    list-style: none;
+    color: #a2a2a2;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.piano-keys{
+    display: flex;
+    margin-top: 40px;
+}
+
+.piano-keys .white{
+    width: 70px;
+    height: 230px;
+    border-radius: 8px;
+    background: linear-gradient(#fff 96%, #eee 4% );
     border: 1px solid #000;
-    border-radius: 4px;
-    cursor:pointer; 
-    user-select:none;
 }
 
-.white {
-    background: #fff;
-    
-}
-
-.black {
-    background: #000;
-    height: 120px;
-    width: 30px;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: 81px;
-    z-index: 1;
-}
-
-.key:active{
+.piano-keys .white:active{
+    /*Este sería otro efecto, que en lugar de hundir aplica un sombreado a la tecla. Podriamos probar colocando diferentes colores*/
+    /*box-shadow: inset -5px 5px 20px rgb(0,0,0,0.2);
+    background: linear-gradient(to bottom, #fff 0%, #eee 100% );*/
     transform: scale(0.98);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.piano-keys .black{
+    width: 44px;
+    height: 140px;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333, #000);
+    margin: 0 -22px 0 -22px;
+    z-index: 2;
+}
+
+.piano-keys .black:active{
+    transform: scale(0.98);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.piano-keys span{
+    position: absolute ;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.13rem;
 }
