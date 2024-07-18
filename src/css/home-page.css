@@ -26,14 +26,13 @@ main{
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 10%;
-    width: 80%;
-    height: 50vh;
+    margin-inline-start: 35px;
+    margin-block-start: 0em;
+    padding: 10px;
+    width: 70%;
 }
 .section{
-    width: 80%;
-    height: 100vh;
-    padding: 10%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,7 +40,7 @@ main{
 }
 section h2{
     width: 80%;
-    margin: 10%;
+    margin: 20px;
     font-size: 25px;
     color: #FAB64B;
     display: flex;
@@ -59,17 +58,7 @@ section h2{
     flex-direction: column;
     justify-content: space-between; 
 }
-.section2{
-    position: relative;
-    width: 80%;
-    height: 100vh;
-    margin: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.cardGuitar{
-    
+.instrumentsCard{
     background-color: #1E3574;
     display: flex;
     flex-direction: column;
@@ -79,63 +68,14 @@ section h2{
     justify-content: center;
     align-items:center;
 }
-.cardViolin{
-    position: relative;
-    background-color: #1E3574;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    border-radius: 15px;
-    margin-bottom: 50px;
-}
-.cardDrums{
-    position: relative;
-    background-color: #1E3574;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    border-radius: 15px;
-    margin-bottom: 50px;
-}
-.cardPiano{
-    position: relative;
-    background-color: #1E3574;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    border-radius: 15px;
-    margin-bottom: 50px;
-} 
-.cardGuitar img{
+.instrumentsCard img{
     width: 100%;
     height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cardViolin img{
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cardDrums img{
-    width: 100%;
-    height: 30vh;
-    margin-top: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cardPiano img{
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.descriptionGuitar{
+.descriptionInstruments{
     background-color: #1E3574;
     border-radius: 5%;
     width: 80%;
@@ -146,70 +86,15 @@ section h2{
     justify-content: center;
     align-items: center;
 }
-.descriptionViolin{
-    background-color: #1E3574;
-    border-radius: 5%;
-    width: 80%;
-    height: 40vh;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.descriptionDrums{
-    background-color: #1E3574;
-    border-radius: 5%;
-    width: 80%;
-    height: 40vh;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.descriptionPiano{
-    background-color: #1E3574;
-    border-radius: 5%;
-    width: 80%;
-    height: 40vh;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.descriptionGuitar p{
+.descriptionInstruments p{
     color: white;
 }
-.descriptionViolin p{
-    color: white; 
-}
-.descriptionDrums p{
-    color: white;
-}
-.descriptionPiano p{
-    color: white;
-}
-.descriptionGuitar h3{
+.descriptionInstruments h3{
     color: #FAB64B;
-    margin-top: 5%;
+    margin-top:20%;
+    margin-bottom: 10%;
 }
-.descriptionViolin h3{
-    color: #FAB64B;
-    margin-top: 5%;
-}
-.descriptionDrums h3{
-    color: #FAB64B;
-    margin-top: 5%;
-}
-.descriptionPiano h3{
-    color: #FAB64B;
-    margin-top: 5%;
-}
-.cardGuitar button{
+.descriptionInstruments button{
     width: 100px;
     border-radius: 15px;
     border-style: none;
@@ -219,52 +104,6 @@ section h2{
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: .5rem;
 }
-
-.cardViolin button{
-    position: absolute;
-    bottom: -15px;
-    left: 50%; 
-    transform: translate(-50%);
-    width: 100px;
-    height: 40px;
-    border-radius: 15px;
-    border-style: none;
-    color: white;
-    background-color: #FAB64B;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-.cardDrums button{
-    position: absolute;
-    bottom: -15px;
-    left: 50%; 
-    transform: translate(-50%);
-    width: 100px;
-    height: 40px;
-    border-radius: 15px;
-    border-style: none;
-    color: white;
-    background-color: #FAB64B;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-.cardPiano button{
-    position: absolute;
-    bottom: -15px;
-    width: 100px;
-    height: 40px;
-    border-radius: 15px;
-    border-style: none;
-    color: white;
-    background-color: #FAB64B;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-/* tarjeta relative */
-/* botón absolut */
