@@ -12,6 +12,7 @@ header{
     height: 60vh;
     flex-direction: column;
     background-image: url('/public/assets/ilustraciones/Imagen\ header\ mobile.png');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -21,18 +22,20 @@ main{
     width: 100%;
     height: 100vh;
 }
-.description{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    margin-inline-start: 35px;
-    margin-block-start: 0em;
-    padding: 10px;
-    width: 70%;
+section.description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: white;
+  width: 100%;
+  padding: 2rem 0;
 }
-.section{
-    width: 50%;
+.text-description{
+    width: 80%;
+}
+.instruments{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,6 +66,7 @@ section h2{
     display: flex;
     flex-direction: column;
     width: 90%;
+    height: auto;
     border-radius: 15px;
     margin-bottom: 50px;
     justify-content: center;
@@ -70,14 +74,12 @@ section h2{
 }
 .instrumentsCard img{
     width: 100%;
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .descriptionInstruments{
     background-color: #1E3574;
-    border-radius: 5%;
     width: 80%;
     height: 40vh;
     padding: 5%;
@@ -106,4 +108,137 @@ section h2{
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: .5rem;
+}
+@media (min-width: 1300px) {
+    body{
+        width: 100%
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        background-image: url('/public/assets/ilustraciones/imagen-header.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+    main{
+        width: 100%;
+        height: auto;
+    }
+    section.description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10em;
+        margin-inline-start: 0px;
+        margin-block-start: 0em;
+    }
+    .instruments{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .instruments h2{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 40px;
+        color: #FAB64B;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1{
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center;
+        margin: 50px 100px;
+    }
+    .instrumentsCard {
+        width: 40%;
+        height: auto;
+        margin-bottom: 10%;
+        margin-left: 10%;
+    }
+    .instrumentsCard img{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 667px) {
+    body{
+        width: 667px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+        background-image: url('/public/assets/ilustraciones/Imagen\ header\ mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    section.instruments{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .section1{
+        position: relative;
+        width: 50%;
+        height: 300vh;
+        margin: 10%;
+        margin-bottom: 50%;
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    .instrumentsCard {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .instrumentsCard img{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section.description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-inline-start: 0px;
+        margin-block-start: 0em;
+    }
+    .descriptionInstruments{
+        background-color: #1E3574;
+        width: 80%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
