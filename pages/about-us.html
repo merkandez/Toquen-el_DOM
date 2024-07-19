@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sobre nosotros</title>
     <link rel="stylesheet" href="/src/css/about-us.css" />
     <link rel="icon" type="image/png" href="" />
   </head>
   <body>
-    <header>
+    <header class="mobile_mode">
       <nav>
-        <a href="../index.html">
-          <img
-            src="/public/assets/ilustraciones/Logo.png"
-            alt="Logo factoria de sonidos"
-            width="100px"
-        /></a>
+        <menu>
+          <li>
+            <a href="../index.html">
+              <img
+                src="/public/assets/ilustraciones/Logo.png"
+                alt="Logo factoria de sonidos"
+                width="50px"
+            /></a>
+          </li>
+          <li><h1 class="mobile_mode">Factoría de sonidos</h1></li>
+          <li>
+            <a href="../index.html">
+              <img
+                src="/public/assets/ilustraciones/Menú hamburguesa.png"
+                alt="Logo factoria de sonidos"
+                width="40px"
+            /></a>
+          </li>
+        </menu>
+      </nav>
+    </header>
+    <header class="desk_mode">
+      <a href="../index.html">
+        <img
+          src="/public/assets/ilustraciones/Logo.png"
+          alt="Logo factoria de sonidos"
+          width="100px"
+      /></a>
+      <nav>
         <menu>
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="./about-us.html">Nosotr@s</a></li>
@@ -23,8 +46,8 @@
           <li><a href="./contact.html">Contacto</a></li>
         </menu>
       </nav>
-      <h1>Factoría de sonidos</h1>
     </header>
+    <h1 class="desk_mode">Factoría de sonidos</h1>
     <main>
       <section class="about_us">
         <article class="sobre_nosotros">
@@ -64,10 +87,11 @@
           <div class="card_text">
             <h3>Laura</h3>
             <p class="card_description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Cupiditate ea sit quam repellat, blanditiis ipsum a dolorem
-              assumenda minus officia ipsa aperiam qui quibusdam eveniet
-              accusamus, quia eius voluptates nulla!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              blandit, nisi sit amet aliquam ultricies, arcu lacus interdum
+              nibh, non scelerisque sapien magna sed massa. Nunc posuere at
+              neque vitae blandit. Cras congue, sem a vestibulum ullamcorper,
+              augue diam sagittis.
             </p>
           </div>
           <div class="avatar">
@@ -84,7 +108,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Cupiditate ea sit quam repellat, blanditiis ipsum a dolorem
               assumenda minus officia ipsa aperiam qui quibusdam eveniet
-              accusamus, quia eius voluptates nulla!vbczbcvb
+              accusamus, quia eius voluptates nulla!
             </p>
           </div>
           <div class="avatar">
