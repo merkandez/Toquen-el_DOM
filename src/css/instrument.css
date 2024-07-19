@@ -30,7 +30,7 @@ header h2{
     width: 80%;
     max-width: 1060px;
     margin: 0 auto;
-    background-image: url(/factoria-de-sonidos/public/assets/ilustraciones/background-piano.jpg);
+    background-image: url(/public/assets/ilustraciones/background-piano.jpg);
     background-size: cover;
     border-radius: 20px;
     padding: 35px 40px;
@@ -117,10 +117,10 @@ header h2{
     border: 1px solid #000;
 }
 
-.piano-keys .white:active{
+.piano-keys .white.active{
     /*Este sería otro efecto, que en lugar de hundir aplica un sombreado a la tecla. Podriamos probar colocando diferentes colores*/
-    /*box-shadow: inset -5px 5px 20px rgba(185, 0, 0, 0.842);
-    background: linear-gradient(to bottom, #e20707 0%, #f10404 100% );*/
+    /*box-shadow: inset -5px 5px 20px rgba(39, 39, 39, 0.842);*/
+    background: linear-gradient(to bottom, #727171 0%, #b8b6b6 100% );
     transform: scale(0.98);
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
@@ -134,7 +134,7 @@ header h2{
     z-index: 2;
 }
 
-.piano-keys .black:active{
+.piano-keys .black.active{
     transform: scale(0.98);
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }

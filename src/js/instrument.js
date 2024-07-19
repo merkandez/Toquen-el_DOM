@@ -1,7 +1,25 @@
 const pianoKeys = document.querySelectorAll(".piano-keys .key");
 
-pianoKeys.forEach(key =>{
-    console.log(key);
+let audio = new Audio("/public/assets/sounds/a.mp3");
+
+const playTune=(key) => {
+    audio.src=`/public/assets/sounds/${key}.mp3`;
+    audio.play();
+    const clickedKey = document.querySelector(`[data-key="${key}"]`);
+    clickedKey.classList.add("active");
+    setTimeout(() => {
+        clickedKey.classList.remove("active");
+    })
 }
 
+pianoKeys.forEach(key =>{
+    key.addEventListener("click",() => playTune(key.dataset.key));
+}
 );
+
+const pressedKey = (e) =>{
+    playTune(e.key);
+}
+
+document.addEventListener("keydown", pressedKey);
+
