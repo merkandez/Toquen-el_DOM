@@ -20,21 +20,22 @@ main {
 header.desk_mode {
   display: none;
 }
+
 header.mobile_mode nav menu {
-  background-image: url(/public/assets/ilustraciones/Navbar\ tablón\ madera.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 800px;
-  height: 50px;
   list-style: none;
+  background-image: url(/public/assets/ilustraciones/mobile-tablón-madera.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 50px;
 }
-h1.mobile_mode{
+
+h1.mobile_mode {
   color: var(--chocolate);
-  padding-top: 20px;
+  padding: 0;
 }
 
 section.about_us {
@@ -107,6 +108,45 @@ p.card_description {
 div.avatar:hover {
   scale: 1.1;
 }
+img#hamburger {
+  padding-right: 2rem;
+  color: var(--orange);
+  width: 25px;
+}
+img.logo_mobile {
+  padding-left: 1rem;
+}
+/* Estilos del menú desplegable */
+.hidden {
+  display: none;
+}
+
+#mobile-menu {
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--background-color);
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100%;
+}
+
+#mobile-menu li {
+  padding: 10px;
+  border-bottom: 1px solid var(--orange);
+  text-align: center;
+}
+
+#mobile-menu li a {
+  color: var(--orange);
+  text-decoration: none;
+}
+@media (min-width: 550px) and (max-width: 799px) {
+  header.mobile_mode nav menu {
+    min-height: 75px;
+  }
+}
+
 @media (min-width: 800px) {
   article.card_profes {
     display: flex;
@@ -167,7 +207,8 @@ div.avatar:hover {
     list-style: none;
     background-image: url(/public/assets/ilustraciones/Navbar\ tablón\ madera.png);
   }
-  h1 {
+  h1.desk_mode {
+    display: block;
     color: var(--orange);
     padding-bottom: 1em;
     font-size: 2.5rem;
