@@ -9,11 +9,11 @@ const playTune=(key) => {
     clickedKey.classList.add("active");
     setTimeout(() => {
         clickedKey.classList.remove("active");
-    })
+    },150)
 }
 
 pianoKeys.forEach(key =>{
-    key.addEventListener("click",() => playTune(key.dataset.key));
+    key.addEventListener("mousedown",() => playTune(key.dataset.key));
 }
 );
 

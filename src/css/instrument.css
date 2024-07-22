@@ -17,7 +17,7 @@ body {
 
 /*Tittle*/
 
-header h2{
+.titleHeader h2{
     font-family:"Playwrite CU";
     color: #FAB64B;
     font-size: 3rem;
@@ -117,7 +117,7 @@ header h2{
     border: 1px solid #000;
 }
 
-.piano-keys .white.active{
+.piano-keys .white:active{
     /*Este sería otro efecto, que en lugar de hundir aplica un sombreado a la tecla. Podriamos probar colocando diferentes colores*/
     /*box-shadow: inset -5px 5px 20px rgba(39, 39, 39, 0.842);*/
     background: linear-gradient(to bottom, #727171 0%, #b8b6b6 100% );
