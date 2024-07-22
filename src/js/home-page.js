@@ -1,13 +1,13 @@
 function redirectionGuitar (){
-    location.href = "maintenance-page-guitar.html"
+    location.href = "pages/maintenance-page-guitar.html"
 }
 function redirectionViolin (){
-    location.href = "maintenance-page-violin.html"
+    location.href = "pages/maintenance-page-violin.html"
 }
 function redirectionDrums (){
-    location.href = "maintenance-page-drums.html"
+    location.href = "pages/maintenance-page-drums.html"
 }
 function redirectionPiano (){
-    location.href = "maintenance-page-instrument.html"
+    location.href = "pages/instrument.html"
 }
 
