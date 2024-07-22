@@ -15,6 +15,7 @@ body {
 /* Media Query para pantallas con un ancho de al menos 1600px y altura de 300px */
 @media screen and (min-width: 1300px) and (min-height: 375px) {
   body {
+    background-image: url("/public/assets/ilustraciones/guitarra-en-construcción.png");
     background-size: contain; /* Ajusta el tamaño del fondo para que se ajuste dentro del área visible */
     /* O puedes usar background-size: 1600px 300px; si prefieres un tamaño específico */
      height: auto;
@@ -26,6 +27,7 @@ body {
 /* Media Query para pantallas menores de 1600px, ajusta el tamaño de fondo */
 @media screen and (max-width: 1599px) {
   body {
+    background-image: url("/public/assets/ilustraciones/guitarra-en-construcción.png");
     background-size: cover; /* Mantiene la cobertura completa */
     height: auto;
     width: auto;
@@ -36,6 +38,7 @@ body {
 /* Media Query para pantallas menores de 300px de altura, ajusta el tamaño de fondo */
 @media screen and (max-height: 299px) {
   body {
+    background-image: url("/public/assets/ilustraciones/guitarra-en-construcción.png");
     background-size: cover; /* Asegura que el fondo siempre cubra el área visible */
     height: auto;
     width: auto;
