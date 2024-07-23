@@ -63,7 +63,7 @@ body{
 /* Inicio de la Section Main o formulario de Contacto */
 
 .container {
-    background-image: url(/factoria-de-sonidos/public/assets/ilustraciones/imagen-fondo-formulario-cortada.png);
+    background-image: url(/public/assets/ilustraciones/imagen-fondo-formulario-cortada.png);
     display: flex;
     width: 100%;
     flex-direction: row;

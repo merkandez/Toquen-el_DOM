@@ -35,9 +35,10 @@ body ¨{
 }
 
 .footer .social-media {
+    position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
 }
 
 .footer .social-media span{
@@ -53,9 +54,9 @@ body ¨{
 }
 
 .footer .social-media img {
-    width: 240px;
-    height: 27px;
-    margin-bottom: 10px;
+    width: 35%;
+    position: absolute;
+    margin-top: -25px;
 }
 
 .footer .social-media p {
@@ -77,8 +78,27 @@ body ¨{
     text-decoration: underline;    
 }
 
+/* El boton que hemos añadido para enseñar/ocultar info */
 
-@media (max-width: 768px) {
+#toggleInfoBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#toggleInfoBtn:hover {
+    background-color: #565252;
+}
+
+#additionalInfo {
+    margin-top: 10px;
+    display: none;
+}
+
+
+@media (max-width: 375px) {
     .footer-content {
         padding: 0 10px;
     }
@@ -95,10 +115,6 @@ body ¨{
         font-size: 12px;
     }
 
-    .footer .social-media img {
-        width: 120px;
-        height: 20px;
-    }
 }
 
 
