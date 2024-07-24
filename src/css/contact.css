@@ -63,7 +63,7 @@ body{
 /* Inicio de la Section Main o formulario de Contacto */
 
 .container {
-    background-image: url(/public/assets/ilustraciones/imagen-fondo-formulario-cortada.png);
+    background-image: url(/factoria-de-sonidos/public/assets/ilustraciones/imagen-fondo-formulario-cortada.png);
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -77,9 +77,8 @@ body{
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    justify-content: center;
-        
+    width: 50%;
+    justify-content: center;     
 }
 
 .contact-form h1 {
@@ -89,7 +88,6 @@ color: #333;
 }
     
 .contact-form form {
-
 margin-left: 2rem;
 display: flex;
 flex-direction: column;
@@ -98,8 +96,7 @@ flex-direction: column;
 .contact-form label {
     margin-bottom: 5px;
     color: black;
-    font-size: 30px;
-    
+    font-size: 30px; 
 }
 
 .contact-form input, .contact-form textarea {
@@ -116,14 +113,13 @@ flex-direction: column;
 
 /* Este es el boton de Enviar */
 .contact-form button {
-display: flex;
-padding: 1rem;
-border-radius: 1rem;
+padding: .5rem;
+border-radius: .5rem;
 color: aliceblue;
 background-color: #015f01;
-font-size: 25px;
+font-size: 10px;
 transition: 1s;
-width: 18%;
+width: 30%;
 align-items: start;
 justify-content: start;
 }
@@ -140,7 +136,7 @@ justify-content: start;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     height: 15px;
    
 }
@@ -150,19 +146,9 @@ justify-content: start;
 
 /* css previo */
 
-.hidden {
-    display: none;
-}
 
-.success {
-    color: green;
-}
 
-.error{
-    color: red;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container{
         flex-direction: column;
         align-items: stretch;
@@ -170,27 +156,16 @@ justify-content: start;
     .side-image {
         padding: 0;
         margin-bottom: 20px;
+        display: none;
     }
 
     .contact-form {
+        width: 100%;
         padding: 0 20px;
     }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .header h2, .header h5 {
-        font-size: 1.5em;
-    }
-
-    .header p {
-        font-size: 1em;
+    
+    .side-image img {
+        width: 20%;
     }
 }
+
