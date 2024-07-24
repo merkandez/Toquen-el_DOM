@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre nosotros</title>
     <link rel="stylesheet" href="/src/css/about-us.css" />
+    <link rel="stylesheet" href="/src/css/footer-contact.css" />
     <link rel="icon" type="image/png" href="" />
   </head>
   <body>
@@ -176,7 +177,34 @@
         </article>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Factoría de sonidos</h2>
+        <p>Calle Fernando Poo, nº 25, Arganzuela, 28045, Madrid</p>
+        <div class="social-media">
+          <span>SÍGUENOS:</span>
+          <a href="#"
+            ><img
+              src="/public/assets/iconos-rrss/nueva-img-rrss.webp"
+              alt="Redes Social"
+          /></a>
+        </div>
+        <p>
+          Factoría de sonidos (España), 2024. Todos los derechos reservados.
+        </p>
+        <div class="footer-links">
+          <a href="#">Condiciones de uso</a> |
+          <a href="#">Aviso de privacidad</a> | <a href="#">Área legal</a> |
+          <a href="#">Cookies</a>
+        </div>
+
+        <!-- Añado un Btn para mostrar/ocultar información adicional -->
+        <button id="toggleInfoBtn">Más información</button>
+        <div id="additionalInfo" style="display: none">
+          <p>Información adicional sobre Nosotros</p>
+        </div>
+      </div>
+    </footer>
     <script src="/src/js/hamburger.js"></script>
   </body>
 </html>
