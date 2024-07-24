@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="/src/css/contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <section class="head-page"> <!-- Aqui empieza el Contenedor principal del header -->
+        <div class="header"> <!-- este es el sub-contenedor del header -->
+            <div class="parrafo">
+                <p>
+                <h2>Factoría de Sonidos <br></h2>
+                <h5>Contacta con Nosotros <br></h5>
+                ¡ Esperamos saber de ti pronto y ayudarte a <br>comenzar tu viaje musical !
+                </p>
+                </di>
+            </div> <!-- aqui termina el sub-contenedor del header -->
+        </div>
+    </section> <!-- Aqui termina el contenedor principal del header -->
+
+    <section class="container"> <!-- Inicio de la section main -->
+
+        <aside class="side-image"> <!-- imagen lateral-->
+            <img src="/public/assets/ilustraciones/margarita-formulario.png" alt="">
+        </aside>
+
+        <div class="contact-form"> <!-- Estos son los botones de Contacto -->
+
+            <h1>Contact</h1> <!-- Este es el título del formulario -->
+
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="Mensaje">Mensaje:</label>
+                <textarea name="Message" id="Message" rows="5"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section> <!-- Fin de la section main -->
+<!-- Emnlace al archivo de Javascript -->
+<script src="/src/js/main.js"></script>
+</body>
+
+</html>
