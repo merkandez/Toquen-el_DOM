@@ -151,6 +151,10 @@ body {
     display: none;
 }
 
+.hide{
+    display: none;
+}
+
 /*Step by step*/
 
 .stepByStep{

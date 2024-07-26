@@ -1,9 +1,13 @@
 const pianoKeys = document.querySelectorAll(".piano-keys .key");
-const volumeControl = document.querySelector('.volume-slider input');
-const ckeckKeys = document.querySelector('.keys-checkbox input');
+let volumeControl = document.querySelector('.volume-slider input');
+// let keysCheckbox = document.querySelector('.keys-checkbox input');
 let volume = volumeControl.value / 1
+document.getElementById("ckeckboxKeys").addEventListener("click", function(){
+    let keys = document.querySelectorAll('.key');
+    keys.classList.add('hide');
+})
 
-console.log(checkKeys)
+
 const playTune=(key) => {
     const audio = new Audio(`/public/assets/sounds/${key}.mp3`);
     audio.play();
@@ -27,9 +31,24 @@ pianoKeys.forEach(key =>{
 }
 );
 
-const showHideKeys = () =>{
-    pianoKeys.forEach(key => key.classList.toggle("hide"))
-}
+// const showHideKeys = () =>{
+//     pianoKeys.forEach(key => key.classList.toggle("hide"));
+// }
+
+// function hideKeys() {
+  
+//     if (keysCheckbox.classList.contains('hide')){
+//         keysCheckbox.classList.remove('hide')
+    
+//     }
+//     else{
+//         keysCheckbox.classList.add('hide')
+//     }
+// }
+
+
+
+
 
 const pressedKey = (e) => {
     // Asegurarse de que solo las teclas relevantes desencadenen sonidos
@@ -41,5 +60,13 @@ const pressedKey = (e) => {
 
 document.addEventListener("keydown", pressedKey);
 rangeVolume.addEventListener("input", handleVolume);
-ckeckKeys.addEventListener("click", showHideKeys);
 
+
+
+// function prueba(){
+//     keysCheckbox.addEventListener("click", function(){
+//         hideKeys()
+//     });
+// }
+
+// prueba();
