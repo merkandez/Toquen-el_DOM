@@ -115,9 +115,9 @@ flex-direction: column;
 .contact-form button {
 padding: .5rem;
 border-radius: .5rem;
-color: aliceblue;
-background-color: #015f01;
-font-size: 10px;
+color: white;
+background-color: hsl(34, 91%, 49%);
+font-size: 15px;
 transition: 1s;
 width: 30%;
 align-items: start;
