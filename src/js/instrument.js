@@ -1,12 +1,20 @@
 const pianoKeys = document.querySelectorAll(".piano-keys .key");
 let volumeControl = document.querySelector('.volume-slider input');
-// let keysCheckbox = document.querySelector('.keys-checkbox input');
 let volume = volumeControl.value / 1
-document.getElementById("ckeckboxKeys").addEventListener("click", function(){
-    let keys = document.querySelectorAll('.key');
-    keys.classList.add('hide');
-})
 
+document.getElementById("ckeckboxKeys").addEventListener("change", function(){
+    let keys = document.querySelectorAll(".spanShow")
+    if (this.checked){
+        keys.forEach(key=>{
+            key.classList.add('hide')
+        })
+    }
+    else{
+        keys.forEach(key=>{
+            key.classList.remove('hide')
+        })
+    }
+})
 
 const playTune=(key) => {
     const audio = new Audio(`/public/assets/sounds/${key}.mp3`);
@@ -21,7 +29,6 @@ const playTune=(key) => {
 }
 }
 
-
 volumeControl.addEventListener('input', (e) => {
     volume = e.target.value / 1;
 });
@@ -30,25 +37,6 @@ pianoKeys.forEach(key =>{
     key.addEventListener("click",() => playTune(key.dataset.key));
 }
 );
-
-// const showHideKeys = () =>{
-//     pianoKeys.forEach(key => key.classList.toggle("hide"));
-// }
-
-// function hideKeys() {
-  
-//     if (keysCheckbox.classList.contains('hide')){
-//         keysCheckbox.classList.remove('hide')
-    
-//     }
-//     else{
-//         keysCheckbox.classList.add('hide')
-//     }
-// }
-
-
-
-
 
 const pressedKey = (e) => {
     // Asegurarse de que solo las teclas relevantes desencadenen sonidos
@@ -63,10 +51,3 @@ rangeVolume.addEventListener("input", handleVolume);
 
 
 
-// function prueba(){
-//     keysCheckbox.addEventListener("click", function(){
-//         hideKeys()
-//     });
-// }
-
-// prueba();
