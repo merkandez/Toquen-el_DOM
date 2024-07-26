@@ -13,7 +13,7 @@ body {
     width: 100%;
     margin: 0;
     background-color: #2C4FBB;
-}
+    }
 
 /*Tittle*/
 
@@ -21,7 +21,8 @@ body {
     font-family:"Playwrite CU";
     color: #FAB64B;
     font-size: 3rem;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
+    margin-top: 3%;
 }
 
 /*Piano headboard*/
@@ -107,6 +108,7 @@ body {
 .piano-keys{
     display: flex;
     margin-top: 40px;
+    justify-content: center;
 }
 
 .piano-keys .white{
@@ -160,9 +162,11 @@ body {
 }
 
 .tittle h2{
+    text-align: center;
     color: #FAB64B;
     font-family: "Playwrite CU";
     margin: 4% 0;
+    font-size: 3rem;
 }
 
 .description p{
@@ -191,13 +195,19 @@ body {
     }
 }
 
-@media(max-width:667px){
-
-
+@media(max-width:820px){
     .piano-keys li:nth-last-child(-n+12){
         display: none;
     }
-  
+    
+    .titleHeader h2{
+        font-size: 2.2rem;
+    }
+
+    .tittle h2{
+        font-size: 2.2rem;
+    }
+    
 }
 
 @media(max-width:667px){
@@ -209,12 +219,39 @@ body {
     .piano h2{
         font-size: 1.4rem;
     }
+   
+    .piano-keys li:nth-last-child(-n+12){
+        display: none;
+    }
+}
 
+@media(max-width:375px){
     .piano-keys .white{
         width: 48px;
     }
 
-    .piano-keys{
-        justify-content: center;
+    .titleHeader h2{
+        font-size: 1.2rem;
+    
+    }
+
+    .wrapper .piano h2{
+        font-size: 1rem;
+    }
+
+    .volume-slider span{
+        font-size: 0.5rem;
+    }
+
+    #pianoOptions{
+        font-size: 0.9rem;
+    }
+
+    .tittle h2{
+        font-size: 1.2rem;
+    }
+
+    .description p, .description li{
+        font-size: 0.8rem;
     }
 }
