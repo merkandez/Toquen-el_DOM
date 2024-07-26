@@ -6,12 +6,12 @@ document.getElementById("ckeckboxKeys").addEventListener("change", function(){
     let keys = document.querySelectorAll(".spanShow")
     if (this.checked){
         keys.forEach(key=>{
-            key.classList.add('hide')
+            key.classList.remove('hide')
         })
     }
     else{
         keys.forEach(key=>{
-            key.classList.remove('hide')
+            key.classList.add('hide')
         })
     }
 })
