@@ -67,61 +67,58 @@ margin-bottom: 10px;
 }
 
 .footer .social-media p {
-    color: #565252;
+  color: #565252;
 }
 
 .footer .footer-links {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .footer .footer-links a {
-    color: #333;
-    text-decoration: none;
-    margin: 0 5px;
-    transition: 1s;
+  color: #333;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: 1s;
 }
 
 .footer .footer-links a:hover {
-    text-decoration: underline;    
+  text-decoration: underline;
 }
 
 /* El boton que hemos añadido para enseñar/ocultar info */
 
 #toggleInfoBtn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
 }
 
 #toggleInfoBtn:hover {
-    background-color: #565252;
+  background-color: #565252;
 }
 
 #additionalInfo {
-    margin-top: 10px;
-    display: none;
+  margin-top: 10px;
+  display: none;
 }
-
 
 @media (max-width: 375px) {
-    .footer-content {
-        padding: 0 10px;
-    }
+  .footer-content {
+    padding: 0 10px;
+  }
 
-    .footer h2 {
-        font-size: 20px;
-    }
+  .footer h2 {
+    font-size: 20px;
+  }
 
-    .footer p, .footer .footer-links a {
-        font-size: 12px;
-    }
+  .footer p,
+  .footer .footer-links a {
+    font-size: 12px;
+  }
 
-    .footer .social-media span {
-        font-size: 12px;
-    }
-
+  .footer .social-media span {
+    font-size: 12px;
+  }
 }
-
-
