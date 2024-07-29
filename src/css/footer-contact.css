@@ -30,7 +30,13 @@ body ¨{
 .footer-content p {
     display: flex;
     margin-top: 0;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content .low {
+    align-items: center;
+    justify-content: center;
 }
 
 .footer .social-media {
