@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-*{
-    padding: 0;
-    margin: 0;
-  
-   
-}
-
-=======
 * {
   padding: 0;
   margin: 0;
@@ -46,8 +37,7 @@ header.mobile_mode nav menu {
   list-style: none;
   background-image: url(/public/assets/ilustraciones/mobile-tablón-madera.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  min-height: 50px;
+  background-size: cover;
 }
 
 h1.mobile_mode {
@@ -226,8 +216,8 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* margin: 2rem; */
-    padding-right: 7rem;
+    margin-right: 7rem;
+    /* padding-right: 7rem; */
   }
   menu {
     display: flex;
@@ -246,4 +236,3 @@ nav {
     font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
   }
 }
->>>>>>> feature-about-us
