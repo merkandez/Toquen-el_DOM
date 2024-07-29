@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <title>Home Page Fcatoría de Sonidos</title>
   </head>
   <body>
@@ -29,9 +30,67 @@
           <li><a href="#instrumentos">Instrumentos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
+=======
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/home-page.css" />
+    <link rel="stylesheet" href="/components/header/header.css" />
+    <title>Home Page Fcatoría de Sonidos</title>
+  </head>
+  <body>
+    <header class="mobile_mode">
+      <nav>
+        <menu>
+          <li>
+            <a href="../index.html">
+              <img
+                class="logo_mobile"
+                src="/public/assets/ilustraciones/Logo.png"
+                alt="Logo factoria de sonidos"
+                width="45px"
+            /></a>
+          </li>
+          <li>
+            <h1>Factoría de sonidos</h1>
+          </li>
+          <li>
+            <img
+              class="hamburger"
+              id="hamburger"
+              src="components/header/hamburgerIcon.png"
+              alt="Menú hamburguesa"
+              width="25px"
+            />
+          </li>
+          <ul id="mobile-menu" class="hidden">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./about-us.html">Nosotr@s</a></li>
+            <li><a href="./instrument.html">Instrumentos</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+          </ul>
+        </menu>
+>>>>>>> 7aaa16abcbc3fe7c2aa5dc97a4173f3a8cfd9c09
       </nav>
     </header>
+    <header class="desk_mode">
+      <a href="../index.html">
+        <img
+          src="/public/assets/ilustraciones/Logo.png"
+          alt="Logo factoria de sonidos"
+          width="100px"
+      /></a>
+      <nav>
+        <menu>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages\about-us.html">Nosotr@s</a></li>
+          <li><a href="#instruments">Instrumentos</a></li>
+          <li><a href="pages\contact.html">Contacto</a></li>
+        </menu>
+      </nav>
+    </header>
+    <script src="headerHamburger.js"></script>
+
     <main>
+<<<<<<< HEAD
       <div class="description">
         <p>
           ¡La música es un juego maravilloso y queremos compartirlo con tus
@@ -55,5 +114,135 @@
       </section>
     </main>
     <script src="/src/js/main.js"></script>
+=======
+      <section class="description">
+        <div class="text-description">
+          <p>
+            ¡La música es un juego maravilloso y queremos compartirlo con tus
+            hijos! En Factoría de Sonido, nos especializamos en <br />
+            clases de música en línea para niños de todas las edades. Nuestros
+            programas están diseñados para hacer que el <br />
+            aprendizaje sea divertido y accesible con métodos interactivos.
+            <br />
+            Únete a nuestra familia musical y ve cómo tu pequeño se convierte en
+            un gran artista. ¡La aventura musical comienza aquí!
+          </p>
+        </div>
+      </section>
+      <section id="instruments" class="instruments">
+        <h2>Nuestras clases</h2>
+        <div class="section1">
+          <div class="instrumentsCard">
+            <img
+              src="public/assets/ilustraciones/guitarra-con-fondo-blanco.png"
+              alt=""
+            />
+            <div class="descriptionInstruments">
+              <h3>Clases de guitarra</h3>
+              <p>
+                Descubre la magia de la guitarra, aprende desde acordes básicos
+                hasta solos avanzados con nuestras clases interactivas. Mejora
+                tu técnica y toca tus canciones favoritas.
+              </p>
+              <button
+                type="button"
+                class="btnGuitar"
+                onclick="redirectionGuitar ()"
+              >
+                Ir
+              </button>
+            </div>
+          </div>
+          
+          
+          <div class="instrumentsCard">
+            <img
+              src="public/assets/ilustraciones/violin-con-fondo-blanco.png"
+              alt=""
+            />
+            <div class="descriptionInstruments">
+              <h3>Clases de Violín</h3>
+              <p>
+                Sumérgete en el mundo del violín, perfecciona tu técnica y
+                interpreta bellas melodías con nuestras lecciones online.
+                Aprende desde lo más básico hasta piezas complejas.
+              </p>
+              <button
+                type="button"
+                class="btnViolin"
+                onclick="redirectionViolin ()"
+              >
+                Ir
+              </button>
+            </div>
+          </div>
+          <div class="instrumentsCard">
+            <img
+              src="public/assets/ilustraciones/bateria-con-fondo-blanco.png"
+              alt=""
+            />
+            <div class="descriptionInstruments">
+              <h3>Clases de Batería</h3>
+              <p>
+                Domina el ritmo y la percusión con nuestras clases de batería,
+                desde los beats básicos hasta los patrones complejos. ¡Descubre
+                tu potencial musical y toca como siempre has soñado!
+              </p>
+              <button
+                type="button"
+                class="btnDrums"
+                onclick="redirectionDrums ()"
+              >
+                Ir
+              </button>
+            </div>
+          </div>
+          <div class="instrumentsCard">
+            <img
+              src="public/assets/ilustraciones/piano-con-fondo-blanco.png"
+              alt=""
+            />
+            <div class="descriptionInstruments">
+              <h3>Clases de Piano</h3>
+              <p>
+                Explora la versatilidad del piano, aprende a tocar desde piezas
+                clásicas hasta canciones contemporáneas con nuestros cursos.
+                Desarrolla tu musicalidad y comprensión del instrumento.
+              </p>
+              <button
+                type="button"
+                class="btnPiano"
+                onclick="redirectionPiano ()"
+              >
+                Ir
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Factoría de sonidos</h2>
+        <p>Calle Fernando Poo, nº 25, Arganzuela, 28045, Madrid</p>
+        <div class="social-media">
+          <span>SÍGUENOS:</span>
+          <a href="#"
+            ><img src="public/assets/iconos-rrss/RRSS footer.png" alt="Redes Social"
+          /></a>
+        </div>
+        <p>
+          Factoría de sonidos (España), 2024. Todos los derechos reservados.
+        </p>
+        <div class="footer-links">
+          <a href="#">Condiciones de uso</a> |
+          <a href="#">Aviso de privacidad</a> | <a href="#">Área legal</a> |
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/src/js/home-page.js"></script>
+    <script src="src/js/hamburger.js"></script>
+>>>>>>> 7aaa16abcbc3fe7c2aa5dc97a4173f3a8cfd9c09
   </body>
 </html>
