@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+*{
+    padding: 0;
+    margin: 0;
+  
+   
+}
+
+=======
 * {
   padding: 0;
   margin: 0;
@@ -236,3 +245,4 @@ nav {
     font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
   }
 }
+>>>>>>> feature-about-us
