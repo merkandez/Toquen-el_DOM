@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/src/css/footer-contact.css">
+    <link rel="stylesheet" href="/components/header/header.css">
+   <link rel="stylesheet" href="/src/css/contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header class="mobile_mode">
+        <nav>
+          <menu>
+            <li>
+              <a href="../index.html">
+                <img
+                  class="logo_mobile"
+                  src="/public/assets/ilustraciones/Logo.png"
+                  alt="Logo factoria de sonidos"
+                  width="45px"
+              /></a>
+            </li>
+            <li><h1 class="mobile_mode">Factoría de sonidos</h1></li>
+            <li>
+              <img
+                class="hamburger"
+                id="hamburger"
+                src="/public/assets/iconos-rrss/hamburgerIcon.png"
+                alt="Menú hamburguesa"
+                width="25px"
+              />
+            </li>
+            <ul id="mobile-menu" class="hidden">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./about-us.html">Nosotr@s</a></li>
+              <li><a href="./instrument.html">Instrumentos</a></li>
+              <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+          </menu>
+        </nav>
+      </header>
+      <header class="desk_mode">
+        <a href="../index.html">
+          <img
+            src="/public/assets/ilustraciones/Logo.png"
+            alt="Logo factoria de sonidos"
+            width="100px"
+        /></a>
+        <nav>
+          <menu>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./about-us.html">Nosotr@s</a></li>
+            <li><a href="./instrument.html">Instrumentos</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+          </menu>
+        </nav>
+      </header>
+      <!-- fin del navbar-->
+
+    <section class="head-page"> <!-- Aqui empieza el Contenedor principal del header -->
+        <div class="header"> <!-- este es el sub-contenedor del header -->
+            <div class="parrafo">
+                <p>
+                <h2>Factoría de Sonidos <br></h2>
+                <h5>Contacta con Nosotros <br></h5>
+                ¡ Esperamos saber de ti pronto y ayudarte a <br>comenzar tu viaje musical !
+                </p>
+                </di>
+            </div> <!-- aqui termina el sub-contenedor del header -->
+        </div>
+    </section> <!-- Aqui termina el contenedor principal del header -->
+
+    <section class="container"> <!-- Inicio de la section main -->
+
+        <aside class="side-image"> <!-- imagen lateral-->
+            <img src="/public/assets/ilustraciones/margarita-formulario.png" alt="">
+        </aside>
+
+        <div class="contact-form"> <!-- Estos son los botones de Contacto -->
+
+            <h1>Contact</h1> <!-- Este es el título del formulario -->
+
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="Mensaje">Mensaje:</label>
+                <textarea name="Message" id="Message" rows="5"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section> <!-- Fin de la section main -->
+
+     <!-- Contenido de la pagina -->
+
+     <footer class="footer">
+        <div class="footer-content">
+            <h2>Factoría de sonidos</h2>
+            <p>Calle Fernando Poo, nº 25, Arganzuela, 28045, Madrid</p>
+            <section class="social-media">
+                <div class="social-media-content">
+                    <span>SÍGUENOS:</span>
+
+                    <a href="#"><img src="/public/assets/iconos-rrss/icono-facebook.png" alt="icono-facebook"></a>
+
+                    <a href="#"><img src="/public/assets/iconos-rrss/icono-instagram.png" alt="icono-instagram"></a>
+
+                    <a href="#"><img src="/public/assets/iconos-rrss/icono-twitter.png" alt="icono-twitter"></a>
+
+                    <a href="#"><img src="/public/assets/iconos-rrss/icono-pinterest.png" alt="Pin"></a>
+
+                </div>
+                
+            </section>
+            <p class="law">Factoría de sonidos (España), 2024. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Condiciones de uso</a> |
+                <a href="#">Aviso de privacidad</a> |
+                <a href="#">Área legal</a> |
+                <a href="#">Cookies</a>
+            </div>
+
+            <!-- Añado un Btn para mostrar/ocultar información adicional -->
+            <button id="toggleInfoBtn">Más información</button>
+            <div id="additionalInfo" style="display: none;">
+                <p>Información adicional sobre Nosotros</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main-js"></script>
+    
+<!-- Emnlace al archivo de Javascript -->
+<script src="/src/js/main.js"></script>
+</body>
+
+</html>
