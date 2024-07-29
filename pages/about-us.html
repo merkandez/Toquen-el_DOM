@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre nosotros</title>
     <link rel="stylesheet" href="/src/css/about-us.css" />
+    <link rel="stylesheet" href="/src/css/footer-contact.css" />
     <link rel="icon" type="image/png" href="" />
   </head>
   <body>
@@ -14,20 +15,28 @@
           <li>
             <a href="../index.html">
               <img
+                class="logo_mobile"
                 src="/public/assets/ilustraciones/Logo.png"
                 alt="Logo factoria de sonidos"
-                width="50px"
+                width="45px"
             /></a>
           </li>
           <li><h1 class="mobile_mode">Factoría de sonidos</h1></li>
           <li>
-            <a href="../index.html">
-              <img
-                src="/public/assets/ilustraciones/Menú hamburguesa.png"
-                alt="Logo factoria de sonidos"
-                width="40px"
-            /></a>
+            <img
+              class="hamburger"
+              id="hamburger"
+              src="/public/assets/iconos-rrss/hamburgerIcon.png"
+              alt="Menú hamburguesa"
+              width="25px"
+            />
           </li>
+          <ul id="mobile-menu" class="hidden">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./about-us.html">Nosotr@s</a></li>
+            <li><a href="./instrument.html">Instrumentos</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+          </ul>
         </menu>
       </nav>
     </header>
@@ -87,11 +96,8 @@
           <div class="card_text">
             <h3>Laura</h3>
             <p class="card_description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              blandit, nisi sit amet aliquam ultricies, arcu lacus interdum
-              nibh, non scelerisque sapien magna sed massa. Nunc posuere at
-              neque vitae blandit. Cras congue, sem a vestibulum ullamcorper,
-              augue diam sagittis.
+              ¡Hola, soy Laura! Soy estudiante de desarrollo web fullstack en
+              Factoría F5 y Scrum Master de este proyecto.
             </p>
           </div>
           <div class="avatar">
@@ -105,10 +111,11 @@
           <div class="card_text">
             <h3>Violeta</h3>
             <p class="card_description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Cupiditate ea sit quam repellat, blanditiis ipsum a dolorem
-              assumenda minus officia ipsa aperiam qui quibusdam eveniet
-              accusamus, quia eius voluptates nulla!
+              Soy Violeta, tengo experiencia en ventas y actualmente estoy
+              aprendiendo varios lenguajes de programación, como HTML, CSS,
+              JavaScript, bases de datos y COBOL. Mi objetivo es combinar mis
+              habilidades en ventas y programación para desarrollar soluciones
+              innovadoras.
             </p>
           </div>
           <div class="avatar">
@@ -139,10 +146,9 @@
           <div class="card_text">
             <h3>Ouri</h3>
             <p class="card_description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Cupiditate ea sit quam repellat, blanditiis ipsum a dolorem
-              assumenda minus officia ipsa aperiam qui quibusdam eveniet
-              accusamus, quia eius voluptates nulla!
+              Hi there!, soy Oury, desarrollador web full stack. Tienes un sueño
+              que te hace mucha ilusión como yo ? Déjame decirte que imposible
+              no es un hecho, es simplemente una opinión.
             </p>
           </div>
           <div class="avatar">
@@ -171,6 +177,34 @@
         </article>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Factoría de sonidos</h2>
+        <p>Calle Fernando Poo, nº 25, Arganzuela, 28045, Madrid</p>
+        <div class="social-media">
+          <span>SÍGUENOS:</span>
+          <a href="#"
+            ><img
+              src="/public/assets/iconos-rrss/nueva-img-rrss.webp"
+              alt="Redes Social"
+          /></a>
+        </div>
+        <p>
+          Factoría de sonidos (España), 2024. Todos los derechos reservados.
+        </p>
+        <div class="footer-links">
+          <a href="#">Condiciones de uso</a> |
+          <a href="#">Aviso de privacidad</a> | <a href="#">Área legal</a> |
+          <a href="#">Cookies</a>
+        </div>
+
+        <!-- Añado un Btn para mostrar/ocultar información adicional -->
+        <button id="toggleInfoBtn">Más información</button>
+        <div id="additionalInfo" style="display: none">
+          <p>Información adicional sobre Nosotros</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/src/js/hamburger.js"></script>
   </body>
 </html>
