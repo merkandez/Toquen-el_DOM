@@ -223,6 +223,10 @@ body {
     .piano-keys li:nth-last-child(-n+12){
         display: none;
     }
+
+    .piano-keys{
+        margin-top: 15px;
+    }
 }
 
 @media(max-width:375px){
