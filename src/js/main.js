@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
             valid = false;
         }
 
-// validar formato correo
+        // validar formato correo
 
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (
             !emailPattern.test(emailInput.value)
@@ -56,4 +56,23 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     });
 
+});
+
+// Para mostrar/ocultar información adicional
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleInfoBtn = document.getElementById('toggleInfoBtn');
+    const additionalInfo = document.getElementById('additionalInfo');
+
+
+    toggleInfoBtn.addEventListener('click', () => {
+        if
+            (additionalInfo.style.display === 'none') {
+            additionalInfo.style.display = 'block';
+            toggleInfoBtn.textContent = 'Menos información';
+        } else {
+            additionalInfo.style.display = 'none';
+            toggleInfoBtn.textContent = 'Más información';
+        }
+    });
 });
