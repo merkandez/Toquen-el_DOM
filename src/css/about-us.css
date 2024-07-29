@@ -2,6 +2,14 @@
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: 'PlaywriteCU';
+  src: url('/public/assets/fonts/PlaywriteCU-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/public/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
 :root {
   --background-color: rgba(44, 79, 187, 1);
   --orange: rgba(250, 182, 75, 1);
@@ -20,21 +28,26 @@ main {
 header.desk_mode {
   display: none;
 }
+
 header.mobile_mode nav menu {
-  background-image: url(/public/assets/ilustraciones/Navbar\ tablón\ madera.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 800px;
-  height: 50px;
   list-style: none;
+  background-image: url(/public/assets/ilustraciones/mobile-tablón-madera.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 50px;
 }
-h1.mobile_mode{
+
+h1.mobile_mode {
   color: var(--chocolate);
-  padding-top: 20px;
+  padding: 0;
+  font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 section.about_us {
@@ -49,6 +62,7 @@ section.cards {
 }
 section.about_us h2 {
   padding-bottom: 1em;
+  font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
 }
 
 article.card_profes {
@@ -103,10 +117,55 @@ p.card_description {
   color: var(--white);
   overflow: hidden;
   word-wrap: break-word;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }
 div.avatar:hover {
   scale: 1.1;
 }
+img#hamburger {
+  padding-right: 2rem;
+  color: var(--orange);
+  width: 25px;
+}
+img.logo_mobile {
+  padding-left: 1rem;
+}
+/* Estilos del menú desplegable */
+.hidden {
+  display: none;
+}
+
+#mobile-menu {
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--background-color);
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100%;
+}
+
+#mobile-menu li {
+  padding: 10px;
+  border-bottom: 1px solid var(--orange);
+  text-align: center;
+  font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
+}
+
+#mobile-menu li a {
+  color: var(--orange);
+  text-decoration: none;
+}
+@media (min-width: 550px) and (max-width: 800px) {
+  header.mobile_mode nav menu {
+    min-height: 75px;
+  }
+}
+nav {
+  padding: 0;
+}
+
 @media (min-width: 800px) {
   article.card_profes {
     display: flex;
@@ -128,6 +187,7 @@ div.avatar:hover {
 
   h3 {
     margin-bottom: 2rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
   }
   header.mobile_mode {
     display: none;
@@ -145,7 +205,8 @@ div.avatar:hover {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
+    font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
   }
   header > a {
     padding: 0.7rem 0 0 2rem;
@@ -156,7 +217,7 @@ div.avatar:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 2rem;
+    /* margin: 2rem; */
     padding-right: 7rem;
   }
   menu {
@@ -167,10 +228,12 @@ div.avatar:hover {
     list-style: none;
     background-image: url(/public/assets/ilustraciones/Navbar\ tablón\ madera.png);
   }
-  h1 {
+  h1.desk_mode {
+    display: block;
     color: var(--orange);
     padding-bottom: 1em;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
+    font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
   }
 }
