@@ -184,7 +184,15 @@ body {
 /* Videotutorial*/
 
 .videotutorial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 80%;
+}
+.videotutorial video{
+    width: 80%;
+    margin: 50px;
 }
 
 

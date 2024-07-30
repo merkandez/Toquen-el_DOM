@@ -23,11 +23,9 @@
 header{
   display: flex;
   justify-content: center;
-  background-image: url('/public/assets/ilustraciones/imagen-header.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
 }
 
 .desk_mode {
