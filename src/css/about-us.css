@@ -35,7 +35,7 @@ header.mobile_mode nav menu {
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  background-image: url(/public/assets/ilustraciones/mobile-tablón-madera.png);
+  background-image: url(../../public/assets/ilustraciones/Imagen\ header\ mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -225,7 +225,7 @@ nav {
     height: 54px;
     width: 624px;
     list-style: none;
-    background-image: url(/public/assets/ilustraciones/Navbar\ tablón\ madera.png);
+    background-image: url(../../public/assets/ilustraciones/navbar-tablon-madera.png);
   }
   h1.desk_mode {
     display: block;
