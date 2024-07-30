@@ -1,15 +1,15 @@
-## FACTORIA DE SONIDOS
+# FACTORIA DE SONIDOS
 
 ## Descripción del proyecto
 Este proyecto es el segundo propuesto por el centro Factoría F5 en el Bootcamp de desarrollo web fullstack. En él, cinco personas hemos colaborado utilizando HTML, CSS y JavaScript, siendo esta la primera vez que trabajamos con JavaScript. Además, hemos practicado la creación de ramas en la nube, commits y mergeos entre ramas por primera vez. Hemos utilizado la metodología ágil Scrum y organizado nuestro trabajo con Trello.
 
 El proyecto es una escuela online de música orientada a niños, con un enfoque especial en el piano, que tiene funcionalidades interactivas creadas con JavaScript. La estructura del sitio web incluye:
 
--Página principal (Home): Contiene el nombre de la escuela, una breve descripción y una sección de los instrumentos disponibles.
--Página about us: Ofrece una breve descripción de cada participante junto a un bitmoji que nos representa.
--Página de contacto: Incluye validaciones hechas con JavaScript.
--Página interactiva del piano: Permite tocar el piano con funcionalidades desarrolladas en JavaScript.
--Páginas "En Construcción": Para los instrumentos que aún no tienen funcionalidades añadidas.
+-**Página principal (Home)**: Contiene el nombre de la escuela, una breve descripción y una sección de los instrumentos disponibles.
+-**Página about us**: Ofrece una breve descripción de cada participante junto a un bitmoji que nos representa.
+-**Página de contacto**: Incluye validaciones hechas con JavaScript.
+-**Página interactiva del piano**: Permite tocar el piano con funcionalidades desarrolladas en JavaScript.
+-**Páginas "En Construcción"**: Para los instrumentos que aún no tienen funcionalidades añadidas.
 
 ## Requisitos previos para descargar el repositorio
 Antes de comenzar, asegúrate de tener instalados los siguientes programas:
@@ -33,14 +33,6 @@ Para instalar este proyecto, sigue los siguientes pasos:
     ```bash
     npm install
     ```
-## Colaboradores
-Agradecimientos especiales a todos los que han contribuido a este proyecto:
-
-- [Laura De Vega Ré](https://github.com/devegalaura-dev) - Scrum Master y desarrollo de la página de incio.
-- [Violeta Flores](https://github.com/Violeta-flores) - Product Owner y desarrollo de la página de "En construcción".
-- [César Mercado](https://github.com/Diallo2024) - Desarrollo de la página About Us y el componente navbar.
-- [Oury Diallo](https://github.com/Diallo2024) - Desarrollo de la página de contacto y el componente footer.
-- [Jonnatha Figueira Vieira](https://github.com/jfigueira87?tab=repositories) - Desarrollo del piano con funcionalidades.
 
 ## Capturas de Pantalla
 -Captura home-page
@@ -61,5 +53,13 @@ Agradecimientos especiales a todos los que han contribuido a este proyecto:
  -Ciberseguridad
  -Vincular el proyecto a una base de datos con la metodología JSON 
 
+## Colaboradores
+Agradecimientos especiales a todos los que han contribuido a este proyecto:
+
+- [Laura De Vega Ré](https://github.com/devegalaura-dev) - Scrum Master y desarrolladora de la página de incio.
+- [Violeta Flores](https://github.com/Violeta-flores) - Product Owner y desarrolladora de la página de "En construcción".
+- [César Mercado](https://github.com/Diallo2024) - Desarrollador de la página About Us y el componente navbar.
+- [Oury Diallo](https://github.com/Diallo2024) - Desarrollador de la página de contacto y el componente footer.
+- [Jonnatha Figueira Vieira](https://github.com/jfigueira87?tab=repositories) - Desarrollador del piano.
 
 
