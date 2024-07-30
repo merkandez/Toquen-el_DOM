@@ -4,61 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/components/header/header.css" />
     <link rel="stylesheet" href="/src/css/footer-contact.css" />
     <link rel="stylesheet" href="/src/css/maintenance-page-drums.css" />
-    <link rel="stylesheet" href="/components/header/header.css" />
   </head>
   <body>
     <section class="principal">
-    <header class="mobile_mode">
-      <nav>
-        <menu>
-          <li>
-            <a href="../index.html">
+      <header class="mobile_mode">
+        <nav>
+          <menu>
+            <li>
+              <a href="../index.html">
+                <img
+                  class="logo_mobile"
+                  src="/public/assets/ilustraciones/Logo.png"
+                  alt="Logo factoria de sonidos"
+                  width="45px"
+              /></a>
+            </li>
+            <li>
+              <h1 class="mobile_mode">Factoría de sonidos</h1>
+            </li>
+            <li>
               <img
-                class="logo_mobile"
-                src="/components/header/Logo.png"
-                alt="Logo factoria de sonidos"
-                width="45px"
-            /></a>
-          </li>
-          <li>
-            <h1 class="mobile_mode">Factoría de sonidos</h1>
-          </li>
-          <li>
-            <img
-              class="hamburger"
-              id="hamburger"
-              src="/components/header/hamburgerIcon.png"
-              alt="Menú hamburguesa"
-              width="25px"
-            />
-          </li>
-          <ul id="mobile-menu" class="hidden">
+                class="hamburger"
+                id="hamburger"
+                src="/public/assets/iconos-rrss/hamburgerIcon.png"
+                alt="Menú hamburguesa"
+                width="25px"
+              />
+            </li>
+            <ul id="mobile-menu" class="hidden">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./about-us.html">Nosotr@s</a></li>
+              <li><a href="./instrument.html">Instrumentos</a></li>
+              <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+          </menu>
+        </nav>
+      </header>
+      <header class="desk_mode">
+        <a href="../index.html">
+          <img
+            src="/public/assets/ilustraciones/Logo.png"
+            alt="Logo factoria de sonidos"
+            width="100px"
+        /></a>
+        <nav>
+          <menu>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./about-us.html">Nosotr@s</a></li>
             <li><a href="./instrument.html">Instrumentos</a></li>
             <li><a href="./contact.html">Contacto</a></li>
-          </ul>
-        </menu>
-      </nav>
-    </header>
-    <header class="desk_mode">
-      <a href="../index.html">
-        <img src="/public/assets/ilustraciones/Logo.png" alt="Logo factoria de sonidos" width="100px"
-      /></a>
-      <nav>
-        <menu>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./about-us.html">Nosotr@s</a></li>
-          <li><a href="./instrument.html">Instrumentos</a></li>
-          <li><a href="./contact.html">Contacto</a></li>
-        </menu>
-      </nav>
-    </header>
-
+          </menu>
+        </nav>
+      </header>
     </section>
-    <h1>¡Sé paciente! La batería se encuentra en construcción.</h1>
     <footer class="footer">
       <div class="footer-content">
         <h2>Factoría de sonidos</h2>
@@ -109,7 +110,6 @@
       </div>
     </footer>
     <script src="/src/js/main.js"></script>
-    <script src="headerHamburger.js"></script>
-    <script src="/components/header/headerHamburger.js"></script>
+    <script src="/src/js/hamburger.js"></script>
   </body>
 </html>
