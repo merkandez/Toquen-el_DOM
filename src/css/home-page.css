@@ -8,7 +8,7 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url('/public/assets/ilustraciones/Imagen\ header\ mobile.png');
+    background-image: url(../../public/assets/ilustraciones/Imagen\ header\ mobile.png) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -110,7 +110,7 @@ section h2{
     display: flex;
     justify-content: center;
     background-size: cover;
-    background-image: url('/public/assets/ilustraciones/imagen-header.png');
+    background-image: url('../../public/assets/ilustraciones/imagen-header.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -126,10 +126,11 @@ section h2{
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    background-image: url(mobile-tablón-madera.png);
+    background-image: url(../../public/assets/ilustraciones/mobile-tablón-madera.png);
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 50px;
+    margin: 30px;
   }
   
   h1.mobile_mode {
@@ -167,7 +168,6 @@ section h2{
     padding: 10px;
     border-bottom: 1px solid var(--orange);
     text-align: center;
-    font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
   }
   
   #mobile-menu li a {
@@ -203,8 +203,7 @@ section h2{
       display: block;
       width: 100%;
       height: 100%;
-      padding: 0.5rem 0;
-      font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
+      padding: 1.2rem 0;
     }
   
     header>a {
@@ -230,7 +229,7 @@ section h2{
       height: 54px;
       width: 624px;
       list-style: none;
-      background-image: url(Navbar\ tablón\ madera.png);
+      background-image: url(../../public/assets/ilustraciones/navbar-tablon-madera.png);
     }
   }
   /* NAVBAR */
