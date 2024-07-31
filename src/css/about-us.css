@@ -35,7 +35,7 @@ header.mobile_mode nav menu {
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  background-image: url(../../public/assets/ilustraciones/Imagen\ header\ mobile.png);
+  background-image: url(/public/assets/ilustraciones/mobile-tablón-madera.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
