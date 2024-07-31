@@ -44,6 +44,7 @@ pianoKeys.forEach(key =>{
 //         playTune(key);
     
 // }
+
 const pressedKey = (e) => {
     const key = e.key.toLowerCase();
     if (!keysPressed[key]) {
