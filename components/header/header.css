@@ -51,7 +51,7 @@ h1.mobile_mode {
   font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
 }
 
-img#hamburger {
+.hamburger img {
   padding-right: 2rem;
   color: var(--orange);
   width: 25px;
