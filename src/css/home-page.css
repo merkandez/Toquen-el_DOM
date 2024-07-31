@@ -115,6 +115,9 @@ section h2{
     width: 100%;
     height: 100vh;
   }
+  .mobile_mode h1{
+    font-size: 1rem;
+  }
   
   .desk_mode {
     display: none;
