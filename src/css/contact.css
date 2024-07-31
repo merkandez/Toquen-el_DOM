@@ -1,11 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    font-size: 17px;
 }
 
-body{
+body {
     display: flex;
     padding: 0;
     margin: 0;
@@ -16,16 +14,16 @@ body{
     flex-direction: column;
 }
 
-.head-page{
+.head-page {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
     justify-self: center;
-    background-color: white;  
+    background-color: white;
 }
 
-.header{
+.header {
     position: static;
     display: flex;
     flex-direction: column;
@@ -43,32 +41,35 @@ body{
     align-items: center;
     flex-direction: column;
     font-size: 2rem;
-    color: orange;
+    color: #FAB64B;
     margin-top: 20px;
+
 }
-header .parrafo p{
+
+header .parrafo p {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    font-family: "Montserrat";
 }
 
-.header .parrafo h2{
+.header .parrafo h2 {
     display: flex;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-style: oblique;
     margin-bottom: 1rem;
-    
-    
+
+
 }
 
-.header .parrafo h5{
+.header .parrafo h5 {
     display: flex;
     align-items: center;
     font-size: 2rem;
     font-style: oblique;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
+    font-family: "Montserrat";
 }
 
 /* Inicio de la Section Main o formulario de Contacto */
@@ -82,74 +83,79 @@ header .parrafo p{
     justify-content: center;
     background-size: cover;
     padding-top: 22%;
-    
+
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     width: 50%;
-    justify-content: center;     
+    justify-content: center;
 }
 
 .contact-form h1 {
-text-align: center;
-font-size: 2.5rem;
-color: #333;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
 }
-    
+
 .contact-form form {
-margin-left: 2rem;
-display: flex;
-flex-direction: column;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
 }
 
 .contact-form label {
     margin-bottom: 5px;
     color: black;
-    font-size: 30px; 
+    font-size: 30px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     display: flex;
     width: 80%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding: 10px;
     border: 1px solid #928e8e;
     border-radius: 5px;
-    background-color: rgb(239, 156, 3);
+    background-color: #FAB64B;
     align-items: center;
 }
 
 
 /* Este es el boton de Enviar */
 .contact-form button {
-padding: .5rem;
-border-radius: .5rem;
-color: white;
-background-color: hsl(34, 91%, 49%);
-font-size: 15px;
-transition: 1s;
-width: 30%;
-align-items: start;
-justify-content: start;
+    padding: .5rem;
+    border-radius: .5rem;
+    color: white;
+    background-color: #FAB64B;
+    font-size: 1rem;
+    transition: 1s;
+    width: 30%;
+    align-items: start;
+    justify-content: start;
 }
 
-.contact-form button:hover{
-    background-color: #03f603;
+.contact-form button:hover {
+    background-color: #b36c15;
     transition: 1s;
     opacity: 1rem;
-} /* aqui termina el boton de Enviar*/
+}
+
+/* aqui termina el boton de Enviar*/
 
 
-.container .side-image {  /* Est es la imagen de Margarita */
+.container .side-image {
+    /* Est es la imagen de Margarita */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 50%;
     height: 15px;
-   
+
 }
 
 /* Aqui termina la imagen de Margarita */
@@ -160,13 +166,19 @@ justify-content: start;
 
 
 @media (max-width: 1024px) {
-    .container{
+    .container {
         flex-direction: column;
         align-items: stretch;
     }
+
     .side-image {
+
         padding: 0;
         margin-bottom: 20px;
+        display: none;
+    }
+
+    .container .side-image {
         display: none;
     }
 
@@ -174,9 +186,38 @@ justify-content: start;
         width: 100%;
         padding: 0 20px;
     }
-    
+
+    .contact-form form {
+        margin-left: 8rem;
+    }
+
     .side-image img {
         width: 20%;
     }
+
 }
 
+@media (max-width:375px) {
+    .contact-form form {
+        margin-left: 0.6rem;
+        margin-top: 35%;
+
+    }
+
+    .header .parrafo h2 {
+        font-size: 2rem;
+    }
+
+    .header .parrafo h5 {
+        font-size: 1.2rem;
+    }
+
+    .parrafo p{
+        font-size: 1.2rem;
+        text-align: center; 
+    }
+
+    .contact-form h1{
+        display: none;
+    }
+}
