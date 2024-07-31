@@ -1,42 +1,15 @@
-<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
 }
-body {
-  background-image: url("/public/assets/ilustraciones/violín-en-construcción.png");
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  position: absolute;
-  top: 90%;
-  font-family: "Playwrite CU", cursive;
-  font-optical-sizing: auto;
-}
-/* Media Query para pantallas con un ancho de al menos 1600px y altura de 300px */
-@media screen and (min-width: 1300px) and (min-height: 375px) {
-  body {
-    background-size: contain; /* Ajusta el tamaño del fondo para que se ajuste dentro del área visible */
-    /* O puedes usar background-size: 1600px 300px; si prefieres un tamaño específico */
-  }
-}
 
-/* Media Query para pantallas menores de 1600px, ajusta el tamaño de fondo */
-@media screen and (max-width: 1599px) {
-  body {
-    background-size: cover; /* Mantiene la cobertura completa */
-    height: auto;
-    width: auto;
-  }
+.principal {
+  background-image: url('/public/assets/ilustraciones/enconstruccionviolin.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vw;
 }
-
-/* Media Query para pantallas menores de 300px de altura, ajusta el tamaño de fondo */
-@media screen and (max-height: 299px) {
-  body {
-    background-size: cover; /* Asegura que el fondo siempre cubra el área visible */
-    height: auto;
-    width: auto;
-  }
+header.mobile_mode nav menu {
+  width: 100vw;
 }
-=======
->>>>>>> 29baa5d93bb2dfed41a63683913687744b0cc138
