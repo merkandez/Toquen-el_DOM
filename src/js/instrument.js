@@ -38,27 +38,27 @@ pianoKeys.forEach(key =>{
 }
 );
 
-// const pressedKey = (e) => {
-//     // Asegurarse de que solo las teclas relevantes desencadenen sonidos
-//     const key = e.key.toLowerCase();
-//         playTune(key);
-    
-// }
-
 const pressedKey = (e) => {
+    // Asegurarse de que solo las teclas relevantes desencadenen sonidos
     const key = e.key.toLowerCase();
-    if (!keysPressed[key]) {
-        keysPressed[key] = true;
+    if (key >= 'a' && key <= 'z'){
         playTune(key);
     }
-};
+}
+
+// const pressedKey = (e) => {
+//     const key = e.key.toLowerCase();
+//     if (!keysPressed[key]) {
+//         keysPressed[key] = true;
+//         playTune(key);
+//     }
+// };
 
 const releasedKey = (e) => {
     const key = e.key.toLowerCase();
     keysPressed[key] = false;
 };
 
-document.addEventListener("keyup", releasedKey);
 document.addEventListener("keydown", pressedKey);
 rangeVolume.addEventListener("input", handleVolume);
 
