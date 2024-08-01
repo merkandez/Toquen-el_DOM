@@ -236,6 +236,7 @@ nav {
     width: 624px;
     list-style: none;
     background-image: url(../../public/assets/ilustraciones/navbar-tablon-madera.png);
+    align-items: center;
   }
 }
 /* NAVBAR */
