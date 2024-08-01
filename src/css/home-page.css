@@ -40,7 +40,7 @@ padding: 2rem 0;
 section h2{
   width: 80%;
   margin: 20px;
-  font-size: 25px;
+  font-size: 3rem;
   color: #FAB64B;
   display: flex;
   flex-direction: row;
@@ -116,7 +116,7 @@ header{
   height: 100vh;
 }
 .mobile_mode h1{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .desk_mode {
