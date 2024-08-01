@@ -18,7 +18,7 @@ body {
 /*Tittle*/
 
 .titleHeader h2{
-    font-family:"Playwrite CU";
+    font-family:"Playwrite CU", "Arial", "Helvetica", "sans-serif";
     color: #FAB64B;
     font-size: 3rem;
     margin-bottom: 5%;
@@ -164,20 +164,20 @@ body {
 .tittle h2{
     text-align: center;
     color: #FAB64B;
-    font-family: "Playwrite CU";
+    font-family: "Playwrite CU", "Arial", "Helvetica", "sans-serif";
     margin: 4% 0;
     font-size: 3rem;
 }
 
 .description p{
     color: white;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial", "Helvetica", "sans-serif";
     font-size: 1.1rem;
 }
 
 .description li{
     color: white;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial", "Helvetica", "sans-serif";
     font-size: 1.1rem;
   
 }
