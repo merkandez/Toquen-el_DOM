@@ -57,7 +57,7 @@ Agradecimientos especiales a todos los que han contribuido a este proyecto:
 
 - [Laura De Vega Ré](https://github.com/devegalaura-dev) - Scrum Master y desarrolladora de la página de incio.
 - [Violeta Flores](https://github.com/Violeta-flores) - Product Owner y desarrolladora de la página de "En construcción".
-- [César Mercado](https://github.com/Diallo2024) - Desarrollador de la página About Us y el componente navbar.
+- [César Mercado](https://github.com/merkandez) - Desarrollador de la página About Us y el componente navbar.
 - [Oury Diallo](https://github.com/Diallo2024) - Desarrollador de la página de contacto y el componente footer.
 - [Jonnatha Figueira Vieira](https://github.com/jfigueira87?tab=repositories) - Desarrollador del piano.
 
