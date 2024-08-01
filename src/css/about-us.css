@@ -149,13 +149,15 @@ img.logo_mobile {
   padding: 10px;
   border-bottom: 1px solid var(--orange);
   text-align: center;
-  font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
+  
 }
 
 #mobile-menu li a {
   color: var(--orange);
   text-decoration: none;
+  font-family: "Montserrat", "Arial", "Helvetica", "sans-serif";
 }
+
 @media (min-width: 550px) and (max-width: 800px) {
   header.mobile_mode nav menu {
     min-height: 75px;

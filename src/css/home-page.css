@@ -1,7 +1,12 @@
 *{
   padding: 0;
   margin: 0;
+  
 }
+h1{
+  color: rgba(86, 66, 66, 1);
+}
+
 .mobile_mode{
   position: relative;
   display: flex;
@@ -80,6 +85,7 @@ section h2{
 .descriptionInstruments p{
   color: white;
   margin: 0 5%;
+  margin-bottom: 5%;
 }
 .descriptionInstruments h3{
   color: #FAB64B;
@@ -98,13 +104,6 @@ section h2{
   margin-bottom: 1rem;
   padding: .5rem;
 }
-/* NAVBAR */
-:root {
-  --background-color: rgba(44, 79, 187, 1);
-  --orange: rgba(250, 182, 75, 1);
-  --white: white;
-  --chocolate: rgba(86, 66, 66, 1);
-}
 
 header{
   display: flex;
@@ -116,7 +115,7 @@ header{
   height: 100vh;
 }
 .mobile_mode h1{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .desk_mode {
@@ -256,5 +255,9 @@ nav {
   .desk_mode h1{
       color: #543017;
       margin: 30px;
+      font-size: 3rem;
   }
+
+  
+  
 }
