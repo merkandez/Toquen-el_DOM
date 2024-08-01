@@ -34,19 +34,18 @@ Para instalar este proyecto, sigue los siguientes pasos:
     npm install
     ```
 
-## Capturas de Pantalla
--Captura home-page
--Captura about us
--Captura instrumento
--Captura página mantenimiento
--Captura contact-page
+## Piano
+url(![Piano versión desktop](public/assets/img-readme/imagen-piano-readme.png))
+url(![Piano versión mobile](public\assets\img-readme\piano-version-mobile.png))
+
 
 ## Tecnologías utilizadas
 -HTML
 -CSS
 -JAVASCRIPT
 -TRELLO
--OBS7
+-OBS
+-GITHUB PAGE
  ## Funcionalidades que añadiríamnos en un futuro
  -Ponerle funcionamiento a todos los instrumentos
  -Añadir más información de los participantes del proyecto desde el apartado de about us
