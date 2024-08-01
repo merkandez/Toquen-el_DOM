@@ -36,7 +36,7 @@ Para instalar este proyecto, sigue los siguientes pasos:
 
 ## Piano
 url(![Piano versión desktop](public/assets/img-readme/imagen-piano-readme.png))
-url(![Piano versión mobile](public\assets\img-readme\piano-version-mobile.png))
+url(![Piano versión mobile](public/assets/img-readme/piano-version-mobile.png))
 
 
 ## Tecnologías utilizadas
