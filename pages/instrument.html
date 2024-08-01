@@ -2,160 +2,157 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piano</title>
-    <link rel="stylesheet" href="/src/css/instrument.css">
-    <link rel="stylesheet" href="../components\header\header.css" />
-    <link rel="stylesheet" href="/components/footer/footer-contact.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano</title>
+  <link rel="stylesheet" href="/src/css/instrument.css">
+  <link rel="stylesheet" href="../components/header/header.css" />
+  <link rel="stylesheet" href="/components/footer/footer-contact.css">
+  <link rel="stylesheet" href="/src/css/styles.css">
 </head>
+
 <body>
   <header class="mobile_mode">
     <nav>
       <menu>
         <li>
           <a href="../index.html">
-            <img
-              class="logo_mobile"
-              src="/public/assets/ilustraciones/Logo.png"
-              alt="Logo factoria de sonidos"
-              width="45px"
-          /></a>
+            <img class="logo_mobile" src="/public/assets/ilustraciones/Logo.png" alt="Logo factoria de sonidos"
+              width="45px" /></a>
         </li>
-        <li><h1 class="mobile_mode">Factoría de sonidos</h1></li>
         <li>
-          <img
-            class="hamburger"
-            id="hamburger"
-            src="/public/assets/iconos-rrss/hamburgerIcon.png"
-            alt="Menú hamburguesa"
-            width="25px"
-          />
+          <h1 class="mobile_mode">Factoría de sonidos</h1>
+        </li>
+        <li>
+          <img class="hamburger" id="hamburger" src="/public/assets/iconos-rrss/hamburgerIcon.png"
+            alt="Menú hamburguesa" width="25px" />
         </li>
         <ul id="mobile-menu" class="hidden">
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./about-us.html">Nosotr@s</a></li>
-          <li><a href="./instrument.html">Instrumentos</a></li>
-          <li><a href="./contact.html">Contacto</a></li>
+          <li><a href="about-us.html">Nosotr@s</a></li>
+          <li><a href="../index.html#instruments">Instrumentos</a></li>
+          <li><a href="contact.html">Contacto</a></li>
         </ul>
       </menu>
     </nav>
   </header>
   <header class="desk_mode">
     <a href="../index.html">
-      <img
-        src="/public/assets/ilustraciones/Logo.png"
-        alt="Logo factoria de sonidos"
-        width="100px"
-    /></a>
+      <img src="/public/assets/ilustraciones/Logo.png" alt="Logo factoria de sonidos" width="100px" /></a>
     <nav>
       <menu>
         <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./about-us.html">Nosotr@s</a></li>
-        <li><a href="./instrument.html">Instrumentos</a></li>
-        <li><a href="./contact.html">Contacto</a></li>
+          <li><a href="about-us.html">Nosotr@s</a></li>
+          <li><a href="../index.html#instruments">Instrumentos</a></li>
+          <li><a href="contact.html">Contacto</a></li>
       </menu>
     </nav>
   </header>
-      <script src="/components/header/headerHamburger.js"></script>
-    <header class="titleHeader">
-        <h2>Bienvenido a tu piano online</h2>
-    </header>
-    <section class="wrapper">
-        <article class="piano">
-            <h2>FACTORIA DE SONIDOS</h2>
-            <div class="column volume-slider">
-                <span id="pianoOptions">Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
-            </div>
-            <div class="column keys-checkbox">
-                <span id="pianoOptions">Show Keys</span> <input id="ckeckboxKeys" type="checkbox">
-            </div>
-        </article>
-        <ul class="piano-keys">
-            <li class="key white" data-key="a"><span class="spanShow hide">a</span></li>
-            <li class="key black" data-key="q"><span class="spanShow hide">q</span></li>
-            <li class="key white" data-key="s"><span class="spanShow hide">s</span></li>
-            <li class="key black" data-key="w"><span class="spanShow hide">w</span></li>
-            <li class="key white" data-key="d"><span class="spanShow hide">d</span></li>
-            <li class="key white" data-key="f"><span class="spanShow hide">f</span></li>
-            <li class="key black" data-key="e"><span class="spanShow hide">e</span></li>
-            <li class="key white" data-key="g"><span class="spanShow hide">g</span></li>
-            <li class="key black" data-key="r"><span class="spanShow hide">r</span></li>
-            <li class="key white" data-key="h"><span class="spanShow hide">h</span></li>
-            <li class="key black" data-key="t"><span class="spanShow hide">t</span></li>
-            <li class="key white" data-key="j"><span class="spanShow hide">j</span></li>
-            <li class="key white" data-key="k"><span class="spanShow hide">k</span></li>
-            <li class="key black" data-key="y"><span class="spanShow hide">y</span></li>
-            <li class="key white" data-key="l"><span class="spanShow hide">l</span></li>
-            <li class="key black" data-key="u"><span class="spanShow hide">u</span></li>
-            <li class="key white" data-key="z"><span class="spanShow hide">z</span></li>
-            <li class="key white" data-key="x"><span class="spanShow hide">x</span></li>
-            <li class="key black" data-key="i"><span class="spanShow hide">i</span></li>
-            <li class="key white" data-key="c"><span class="spanShow hide">c</span></li>
-            <li class="key black" data-key="o"><span class="spanShow hide">o</span></li>
-            <li class="key white" data-key="v"><span class="spanShow hide">v</span></li>
-            <li class="key black" data-key="p"><span class="spanShow hide">p</span></li>
-            <li class="key white" data-key="b"><span class="spanShow hide">b</span></li>
-        </ul>
 
-    </section>
-    <section class="stepByStep">
-        <article class="tittle">
-            <h2>Paso a paso</h2>
-        </article>
-        <article class="description">
-            <p>Bienvenidos a la escuela de piano online, estamos encantados de tenerlos con nosotros en esta emocionante aventura musical. Aquí, podrán descubrir el maravilloso
-            mundo del piano y desarrollar sus habilidades desde la comodidad de su hogar. A continuación os vamos a dar unas pautas sobre como tocar nuestro piano online.</p><br>
-            <p>Para empezar a tocar el piano, tienen dos opciones:</p><br>
-                <ol>
-                    <li>Usar el Ratón: Simplemente hagan clic en las teclas del piano virtual con el ratón. Es una forma sencilla y directa de comenzar a experimentar con los sonidos y las melodías.</li><br>
-                    <li>Usar el Teclado de la Computadora: Si prefieren una experiencia más inmersiva y auténtica, pueden utilizar el teclado de su computadora para tocar el piano virtual. Cada tecla del piano estará asignada a una tecla del teclado.</li>
-                </ol><br>
-            
-            <p>Para facilitar su práctica y asegurarse de que están tocando las notas correctas, pueden activar el botón de Show Keys. Al hacerlo, se mostrarán las teclas correspondientes en el teclado del piano, ayudándoles a identificar rápidamente las notas que están tocando.</p>
-
-        </article>
-    </section>
-    <section class="videotutorial">
-        <article class="tittle">
-            <h2>Videotutorial</h2>
-        </article>
-        <video src="/public/assets/videos/Estrellita.mp4" controls></video>
-    </section>
-    <footer class="footer">
-      <div class="footer-content">
-          <h2>Factoría de sonidos</h2>
-          <p>Calle Fernando Poo, nº 25, Arganzuela, 28045, Madrid</p>
-          <section class="social-media">
-              <div class="social-media-content">
-                  <span>SÍGUENOS:</span>
-
-                  <a href="#"><img src="/public/assets/iconos-rrss/icono-facebook.png" alt="icono-facebook"></a>
-
-                  <a href="#"><img src="/public/assets/iconos-rrss/icono-instagram.png" alt="icono-instagram"></a>
-
-                  <a href="#"><img src="/public/assets/iconos-rrss/icono-twitter.png" alt="icono-twitter"></a>
-
-                  <a href="#"><img src="/public/assets/iconos-rrss/icono-pinterest.png" alt="Pin"></a>
-
-              </div>
-
-          </section>
-          <p>Factoría de sonidos (España), 2024. Todos los derechos reservados.</p>
-          <div class="footer-links">
-              <a href="#">Condiciones de uso</a> |
-              <a href="#">Aviso de privacidad</a> |
-              <a href="#">Área legal</a> |
-              <a href="#">Cookies</a>
-          </div>
-
-          <!-- Añado un Btn para mostrar/ocultar información adicional -->
-          <button id="toggleInfoBtn">Más información</button>
-          <div id="additionalInfo" style="display: none;">
-              <p>Información adicional sobre Nosotros</p>
-          </div>
+  <header class="titleHeader">
+    <h2>Bienvenido a tu piano online</h2>
+  </header>
+  <section class="wrapper">
+    <article class="piano">
+      <h3>FACTORIA DE SONIDOS</h3>
+      <div class="column volume-slider">
+        <span id="pianoOptions">Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
       </div>
+      <div class="column keys-checkbox">
+        <span id="pianoOptions">Show Keys</span> <input id="ckeckboxKeys" type="checkbox">
+      </div>
+    </article>
+    <ul class="piano-keys">
+      <li class="key white" data-key="a"><span class="spanShow hide">a</span></li>
+      <li class="key black" data-key="q"><span class="spanShow hide">q</span></li>
+      <li class="key white" data-key="s"><span class="spanShow hide">s</span></li>
+      <li class="key black" data-key="w"><span class="spanShow hide">w</span></li>
+      <li class="key white" data-key="d"><span class="spanShow hide">d</span></li>
+      <li class="key white" data-key="f"><span class="spanShow hide">f</span></li>
+      <li class="key black" data-key="e"><span class="spanShow hide">e</span></li>
+      <li class="key white" data-key="g"><span class="spanShow hide">g</span></li>
+      <li class="key black" data-key="r"><span class="spanShow hide">r</span></li>
+      <li class="key white" data-key="h"><span class="spanShow hide">h</span></li>
+      <li class="key black" data-key="t"><span class="spanShow hide">t</span></li>
+      <li class="key white" data-key="j"><span class="spanShow hide">j</span></li>
+      <li class="key white" data-key="k"><span class="spanShow hide">k</span></li>
+      <li class="key black" data-key="y"><span class="spanShow hide">y</span></li>
+      <li class="key white" data-key="l"><span class="spanShow hide">l</span></li>
+      <li class="key black" data-key="u"><span class="spanShow hide">u</span></li>
+      <li class="key white" data-key="z"><span class="spanShow hide">z</span></li>
+      <li class="key white" data-key="x"><span class="spanShow hide">x</span></li>
+      <li class="key black" data-key="i"><span class="spanShow hide">i</span></li>
+      <li class="key white" data-key="c"><span class="spanShow hide">c</span></li>
+      <li class="key black" data-key="o"><span class="spanShow hide">o</span></li>
+      <li class="key white" data-key="v"><span class="spanShow hide">v</span></li>
+      <li class="key black" data-key="p"><span class="spanShow hide">p</span></li>
+      <li class="key white" data-key="b"><span class="spanShow hide">b</span></li>
+    </ul>
+
+  </section>
+  <section class="stepByStep">
+    <article class="tittle">
+      <h2>Paso a paso</h2>
+    </article>
+    <article class="description">
+      <p>Bienvenidos a la escuela de piano online, estamos encantados de tenerlos con nosotros en esta emocionante
+        aventura musical. Aquí, podrán descubrir el maravilloso
+        mundo del piano y desarrollar sus habilidades desde la comodidad de su hogar. A continuación os vamos a dar unas
+        pautas sobre como tocar nuestro piano online.</p><br>
+      <p>Para empezar a tocar el piano, tienen dos opciones:</p><br>
+      <ol>
+        <li>Usar el Ratón: Simplemente hagan clic en las teclas del piano virtual con el ratón. Es una forma sencilla y
+          directa de comenzar a experimentar con los sonidos y las melodías.</li><br>
+        <li>Usar el Teclado de la Computadora: Si prefieren una experiencia más inmersiva y auténtica, pueden utilizar
+          el teclado de su computadora para tocar el piano virtual. Cada tecla del piano estará asignada a una tecla del
+          teclado.</li>
+      </ol><br>
+
+      <p>Para facilitar su práctica y asegurarse de que están tocando las notas correctas, pueden activar el botón de
+        Show Keys. Al hacerlo, se mostrarán las teclas correspondientes en el teclado del piano, ayudándoles a
+        identificar rápidamente las notas que están tocando.</p>
+
+    </article>
+  </section>
+  <section class="videotutorial">
+    <article class="tittle">
+      <h2>Videotutorial</h2>
+    </article>
+    <video src="/public/assets/videos/Estrellita.mp4" controls></video>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Factoría de sonidos</h2>
+      <p>Calle Fernando Poo, nº 25, Arganzuela, 28045, Madrid</p>
+      <section class="social-media">
+        <div class="social-media-content">
+          <span>SÍGUENOS:</span>
+
+          <a href="#"><img src="/public/assets/iconos-rrss/icono-facebook.png" alt="icono-facebook"></a>
+
+          <a href="#"><img src="/public/assets/iconos-rrss/icono-instagram.png" alt="icono-instagram"></a>
+
+          <a href="#"><img src="/public/assets/iconos-rrss/icono-twitter.png" alt="icono-twitter"></a>
+
+          <a href="#"><img src="/public/assets/iconos-rrss/icono-pinterest.png" alt="Pin"></a>
+
+        </div>
+
+      </section>
+      <p>Factoría de sonidos (España), 2024. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Condiciones de uso</a> |
+        <a href="#">Aviso de privacidad</a> |
+        <a href="#">Área legal</a> |
+        <a href="#">Cookies</a>
+      </div>
+
+      <!-- Añado un Btn para mostrar/ocultar información adicional -->
+      <button id="toggleInfoBtn">Más información</button>
+      <div id="additionalInfo" style="display: none;">
+        <p>Información adicional sobre Nosotros</p>
+      </div>
+    </div>
   </footer>
   <script src="/src/js/instrument.js"></script>
   <script src="/components/header/headerHamburger.js"></script>

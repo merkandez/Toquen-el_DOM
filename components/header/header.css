@@ -43,15 +43,16 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 50px;
+  width: 100vw;
 }
 
 h1.mobile_mode {
   color: var(--chocolate);
   padding: 0;
-  font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
+  font-family: "Playwrite CU", "Arial", "Helvetica", "sans-serif";
 }
 
-img#hamburger {
+.hamburger img {
   padding-right: 2rem;
   color: var(--orange);
   width: 25px;
@@ -74,6 +75,7 @@ img.logo_mobile {
   top: 50px;
   right: 0;
   width: 100%;
+  z-index: 999;
 }
 
 #mobile-menu li {
@@ -91,6 +93,7 @@ img.logo_mobile {
 @media (min-width: 550px) and (max-width: 800px) {
   header.mobile_mode nav menu {
     min-height: 75px;
+    width: 100vw;
   }
 }
 
@@ -119,6 +122,7 @@ nav {
     height: 100%;
     font-family: PlaywriteCU, Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 18px;
   }
 
   header > a {
