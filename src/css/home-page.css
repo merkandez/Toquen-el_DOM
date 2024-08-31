@@ -114,7 +114,7 @@ header{
   width: 100%;
   height: 100vh;
 }
-.mobile_mode h1{
+/* .mobile_mode h1{
   font-size: 1rem;
 }
 
@@ -134,7 +134,6 @@ header{
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 75px;
-
 }
 
 h1.mobile_mode {
